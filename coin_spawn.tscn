@@ -1,0 +1,63 @@
+[gd_scene load_steps=6 format=3 uid="uid://dt13b6ghbf7um"]
+
+[ext_resource type="Script" path="res://coin_head.gd" id="1_38sym"]
+[ext_resource type="Texture2D" uid="uid://inr0b1hoxo33" path="res://coin5.png" id="1_n2skf"]
+[ext_resource type="Script" path="res://coin1.gd" id="2_rjg75"]
+[ext_resource type="Script" path="res://coin2exist.gd" id="3_au7v5"]
+[ext_resource type="Script" path="res://Gallo_script.gd" id="3_yf3ub"]
+
+[node name="CoinSpawn" type="Sprite2D"]
+scale = Vector2(0.4, 0.4)
+script = ExtResource("1_38sym")
+metadata/_edit_group_ = true
+
+[node name="TestSprite" type="Node" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="TestSprite"]
+position = Vector2(64, -109)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("1_n2skf")
+script = ExtResource("3_au7v5")
+
+[node name="Sprite2D2" type="Sprite2D" parent="TestSprite"]
+position = Vector2(-59, -106)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("1_n2skf")
+
+[node name="Coin5" type="Sprite2D" parent="TestSprite"]
+position = Vector2(-123, 3)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("1_n2skf")
+
+[node name="Sprite2D4" type="Sprite2D" parent="TestSprite"]
+position = Vector2(-60, 109)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("1_n2skf")
+
+[node name="Sprite2D5" type="Sprite2D" parent="TestSprite"]
+position = Vector2(61, 109)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("1_n2skf")
+
+[node name="Coin6" type="Sprite2D" parent="TestSprite"]
+position = Vector2(124, 0)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("1_n2skf")
+
+[node name="Coin7" type="Sprite2D" parent="TestSprite"]
+position = Vector2(1.00001, 0)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("1_n2skf")
+script = ExtResource("2_rjg75")
+
+[node name="Button" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+offset_left = -465.0
+offset_top = -423.0
+offset_right = 480.0
+offset_bottom = 433.0
+script = ExtResource("3_yf3ub")
+
+[node name="Node" type="Node" parent="."]
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

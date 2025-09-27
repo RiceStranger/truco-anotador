@@ -1,0 +1,80 @@
+[gd_scene load_steps=7 format=3 uid="uid://nbdk8jqrta48"]
+
+[ext_resource type="Texture2D" uid="uid://v8du3rytuojy" path="res://score_mode_spr.png" id="1_topsc"]
+[ext_resource type="Script" path="res://mode_bt.gd" id="2_51gjq"]
+[ext_resource type="FontFile" uid="uid://bgbkh1m6c1l4m" path="res://times.ttf" id="2_wkr5e"]
+[ext_resource type="Texture2D" uid="uid://biigukiryaich" path="res://score_spr.png" id="3_buudp"]
+[ext_resource type="Script" path="res://mode_text.gd" id="4_j73qx"]
+[ext_resource type="Script" path="res://max_text.gd" id="6_tgsfp"]
+
+[node name="Mode" type="Node"]
+
+[node name="ModeSpr" type="Sprite2D" parent="."]
+position = Vector2(448.883, -190.5)
+scale = Vector2(1.70179, 1.23913)
+texture = ExtResource("1_topsc")
+
+[node name="ModeBt" type="Button" parent="ModeSpr"]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -46.0
+offset_top = -24.0
+offset_right = 46.0
+offset_bottom = 22.0
+script = ExtResource("2_51gjq")
+
+[node name="ModeText" type="Label" parent="ModeSpr"]
+modulate = Color(0, 0, 0, 1)
+offset_left = -43.0
+offset_top = -16.0
+offset_right = 43.0
+offset_bottom = 21.0
+theme_override_fonts/font = ExtResource("2_wkr5e")
+theme_override_font_sizes/font_size = 28
+text = "Normal"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("4_j73qx")
+
+[node name="ScoreMaxSpr" type="Sprite2D" parent="."]
+position = Vector2(449.25, -98.5)
+scale = Vector2(1.67204, 1.94828)
+texture = ExtResource("3_buudp")
+
+[node name="MaxText" type="Label" parent="ScoreMaxSpr"]
+modulate = Color(0, 0, 0, 1)
+offset_left = -44.4067
+offset_top = -34.646
+offset_right = 47.5933
+offset_bottom = 34.354
+theme_override_fonts/font = ExtResource("2_wkr5e")
+theme_override_font_sizes/font_size = 61
+text = "30"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("6_tgsfp")
+
+[node name="Shabingo" type="Node" parent="."]
+
+[node name="Credits" type="Label" parent="Shabingo"]
+offset_left = 21.0
+offset_top = -235.0
+offset_right = 138.0
+offset_bottom = -215.0
+theme_override_fonts/font = ExtResource("2_wkr5e")
+theme_override_font_sizes/font_size = 17
+text = "Por RiceStranger"
+
+[node name="Version" type="Label" parent="Shabingo"]
+layout_direction = 3
+offset_left = -819.0
+offset_top = -236.0
+offset_right = -767.0
+offset_bottom = -213.0
+theme_override_fonts/font = ExtResource("2_wkr5e")
+theme_override_font_sizes/font_size = 30
+text = "v1.1"
+
+[connection signal="pressed" from="ModeSpr/ModeBt" to="ModeSpr/ModeBt" method="_on_pressed"]
+[connection signal="pressed" from="ModeSpr/ModeBt" to="ModeSpr/ModeText" method="_on_pressed"]
+[connection signal="pressed" from="ModeSpr/ModeBt" to="ScoreMaxSpr/MaxText" method="_on_pressed"]

@@ -1,0 +1,301 @@
+[gd_scene load_steps=28 format=3 uid="uid://chneqs4mb3qjx"]
+
+[ext_resource type="Script" path="res://script1.gd" id="1_ssc0k"]
+[ext_resource type="Texture2D" uid="uid://bcuswajkltvtn" path="res://plus1.png" id="2_vinmf"]
+[ext_resource type="Texture2D" uid="uid://c0gvhiepcsrfb" path="res://wooden_wall.jpg" id="3_ynffc"]
+[ext_resource type="Texture2D" uid="uid://b4ro2gd8ohrte" path="res://cruz.png" id="5_01cfn"]
+[ext_resource type="Script" path="res://1+.gd" id="5_fpena"]
+[ext_resource type="Script" path="res://score1label.gd" id="5_kbk8f"]
+[ext_resource type="Script" path="res://2+.gd" id="6_nupfi"]
+[ext_resource type="Script" path="res://1-.gd" id="6_xedso"]
+[ext_resource type="Script" path="res://2-.gd" id="8_0fas5"]
+[ext_resource type="Texture2D" uid="uid://krij22f4fjet" path="res://score+3_spr.png" id="9_njho3"]
+[ext_resource type="Script" path="res://label_2.gd" id="10_6opjh"]
+[ext_resource type="Script" path="res://1+5.gd" id="10_likom"]
+[ext_resource type="Texture2D" uid="uid://dx4fels1eqmfr" path="res://score-3_spr.png" id="11_dwjbj"]
+[ext_resource type="Script" path="res://but_1-5.gd" id="12_ce0g5"]
+[ext_resource type="Script" path="res://2+5.gd" id="13_dgqp4"]
+[ext_resource type="Script" path="res://2-5.gd" id="14_aukeu"]
+[ext_resource type="Texture2D" uid="uid://cca8aabpfpf1f" path="res://delete.png" id="15_s3sih"]
+[ext_resource type="Script" path="res://clearscore.gd" id="16_judyg"]
+[ext_resource type="Texture2D" uid="uid://c2jwpaqmolehv" path="res://little black thing.png" id="17_p2qab"]
+[ext_resource type="Script" path="res://nos.gd" id="18_2vxvt"]
+[ext_resource type="FontFile" uid="uid://bgbkh1m6c1l4m" path="res://times.ttf" id="18_ekwff"]
+[ext_resource type="Script" path="res://nos_line_edit.gd" id="20_sx0os"]
+[ext_resource type="Script" path="res://ellos.gd" id="21_3unaw"]
+[ext_resource type="Script" path="res://ellos_line_edit.gd" id="22_u2mxv"]
+[ext_resource type="PackedScene" uid="uid://nbdk8jqrta48" path="res://mode.tscn" id="25_nts5e"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2318t"]
+radius = 101.55
+
+[sub_resource type="Theme" id="Theme_imyop"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_ssc0k")
+
+[node name="Plus1Button" type="TouchScreenButton" parent="."]
+z_index = 1
+position = Vector2(-290, 990)
+texture_normal = ExtResource("2_vinmf")
+shape = SubResource("CircleShape2D_2318t")
+
+[node name="Fondo" type="Sprite2D" parent="."]
+position = Vector2(540.5, 556.5)
+scale = Vector2(0.257284, 0.567443)
+texture = ExtResource("3_ynffc")
+
+[node name="Cruz" type="Sprite2D" parent="Fondo"]
+position = Vector2(-289.563, 74.7188)
+scale = Vector2(8.89635, 3.57471)
+texture = ExtResource("5_01cfn")
+
+[node name="ScoreHandling" type="Node" parent="Fondo"]
+
+[node name="1+" type="Button" parent="Fondo/ScoreHandling"]
+modulate = Color(1, 1, 1, 0)
+offset_left = 61.0
+offset_top = 24.0
+offset_right = 426.0
+offset_bottom = 584.0
+script = ExtResource("5_fpena")
+
+[node name="2+" type="Button" parent="Fondo/ScoreHandling"]
+modulate = Color(1, 1, 1, 0)
+offset_left = 488.0
+offset_top = 9.0
+offset_right = 886.0
+offset_bottom = 564.0
+script = ExtResource("6_nupfi")
+
+[node name="1-" type="Button" parent="Fondo/ScoreHandling"]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 57.0
+offset_top = 624.0
+offset_right = 404.0
+offset_bottom = 1163.0
+script = ExtResource("6_xedso")
+
+[node name="2-" type="Button" parent="Fondo/ScoreHandling"]
+modulate = Color(1, 1, 1, 0)
+offset_left = 488.0
+offset_top = 624.0
+offset_right = 876.0
+offset_bottom = 1177.0
+script = ExtResource("8_0fas5")
+
+[node name="spr_1+5" type="Sprite2D" parent="Fondo/ScoreHandling"]
+position = Vector2(307, 1264)
+scale = Vector2(1, 1.11462)
+texture = ExtResource("9_njho3")
+
+[node name="but_1+5" type="Button" parent="Fondo/ScoreHandling/spr_1+5"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -54.0
+offset_top = -53.83
+offset_right = 55.0
+offset_bottom = 51.17
+icon = ExtResource("9_njho3")
+flat = true
+expand_icon = true
+script = ExtResource("10_likom")
+
+[node name="spr_1-5" type="Sprite2D" parent="Fondo/ScoreHandling"]
+position = Vector2(130, 1265)
+scale = Vector2(1.0709, 1.09231)
+texture = ExtResource("11_dwjbj")
+
+[node name="but_1-5" type="Button" parent="Fondo/ScoreHandling/spr_1-5"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -61.0
+offset_top = -60.0
+offset_right = 70.0
+offset_bottom = 56.0
+icon = ExtResource("11_dwjbj")
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("12_ce0g5")
+
+[node name="spr_2+5" type="Sprite2D" parent="Fondo/ScoreHandling"]
+position = Vector2(623, 1263)
+scale = Vector2(1.09785, 1.12916)
+texture = ExtResource("9_njho3")
+
+[node name="but_2+5" type="Button" parent="Fondo/ScoreHandling/spr_2+5"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -66.0
+offset_top = -52.0
+offset_right = 74.0
+offset_bottom = 56.0
+flat = true
+script = ExtResource("13_dgqp4")
+
+[node name="spr_2-5" type="Sprite2D" parent="Fondo/ScoreHandling"]
+position = Vector2(811.812, 1264)
+scale = Vector2(1.05824, 1.11377)
+texture = ExtResource("11_dwjbj")
+
+[node name="but_2-5" type="Button" parent="Fondo/ScoreHandling/spr_2-5"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -76.0
+offset_top = -52.0
+offset_right = 70.0
+offset_bottom = 56.0
+flat = true
+script = ExtResource("14_aukeu")
+
+[node name="deleteall" type="Sprite2D" parent="Fondo/ScoreHandling"]
+position = Vector2(468, 1269)
+scale = Vector2(1.34739, 1.13109)
+texture = ExtResource("15_s3sih")
+
+[node name="clearscore" type="Button" parent="Fondo/ScoreHandling/deleteall"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -33.3978
+offset_top = -38.9005
+offset_right = 32.6022
+offset_bottom = 35.0995
+script = ExtResource("16_judyg")
+
+[node name="NameHandling" type="Node" parent="Fondo"]
+
+[node name="NosBox" type="Sprite2D" parent="Fondo/NameHandling"]
+modulate = Color(1, 1, 1, 0.552941)
+position = Vector2(193.5, -125)
+scale = Vector2(9.59459, 2.97)
+texture = ExtResource("17_p2qab")
+
+[node name="Nos" type="Label" parent="Fondo/NameHandling/NosBox"]
+top_level = true
+layout_direction = 2
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 5.0
+offset_top = -191.0
+offset_right = 288.0
+offset_bottom = -216.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("18_ekwff")
+theme_override_font_sizes/font_size = 90
+text = "Nosabcd"
+horizontal_alignment = 1
+vertical_alignment = 1
+text_overrun_behavior = 3
+ellipsis_char = ""
+script = ExtResource("18_2vxvt")
+
+[node name="LineEdit" type="LineEdit" parent="Fondo/NameHandling/NosBox"]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -47.5789
+offset_top = -22.5589
+offset_right = 19.4836
+offset_bottom = 23.4411
+theme = SubResource("Theme_imyop")
+theme_override_colors/clear_button_color_pressed = Color(0, 0, 0, 0)
+theme_override_colors/clear_button_color = Color(0, 0, 0, 0)
+theme_override_colors/selection_color = Color(0, 0, 0, 0)
+theme_override_colors/caret_color = Color(0, 0, 0, 0)
+theme_override_colors/font_placeholder_color = Color(0, 0, 0, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0)
+theme_override_colors/font_selected_color = Color(0, 0, 0, 0)
+theme_override_colors/font_color = Color(0, 0, 0, 0)
+theme_override_fonts/font = ExtResource("18_ekwff")
+selecting_enabled = false
+drag_and_drop_selection_enabled = false
+script = ExtResource("20_sx0os")
+
+[node name="EllosBox" type="Sprite2D" parent="Fondo/NameHandling"]
+modulate = Color(1, 1, 1, 0.552941)
+position = Vector2(714, -125)
+scale = Vector2(9.93243, 2.86)
+texture = ExtResource("17_p2qab")
+
+[node name="Ellos" type="Label" parent="Fondo/NameHandling/EllosBox"]
+top_level = true
+layout_direction = 2
+anchors_preset = -1
+anchor_top = 0.148
+anchor_right = 0.441
+anchor_bottom = 1.0
+offset_left = 532.0
+offset_top = -217.68
+offset_right = 859.31
+offset_bottom = -208.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("18_ekwff")
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("21_3unaw")
+
+[node name="LineEditEllos" type="LineEdit" parent="Fondo/NameHandling/EllosBox"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -18.0
+offset_top = -24.0
+offset_right = 49.0625
+offset_bottom = 27.0
+script = ExtResource("22_u2mxv")
+
+[node name="Fondo2" type="Sprite2D" parent="."]
+position = Vector2(540.5, 2121)
+scale = Vector2(0.257284, 0.567443)
+texture = ExtResource("3_ynffc")
+flip_v = true
+
+[node name="Fondo3" type="Sprite2D" parent="."]
+position = Vector2(540.5, -1036)
+scale = Vector2(0.257284, 0.567443)
+texture = ExtResource("3_ynffc")
+flip_v = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(465, 560)
+rotation = -3.14159
+scale = Vector2(357.231, -117.707)
+zoom = Vector2(0.1, 0.1)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 33.0
+offset_top = 14.0
+offset_right = 73.0
+offset_bottom = 37.0
+scale = Vector2(6.32, 6.32)
+script = ExtResource("5_kbk8f")
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 657.0
+offset_top = 14.0
+offset_right = 697.0
+offset_bottom = 37.0
+scale = Vector2(6.32, 6.32)
+horizontal_alignment = 2
+script = ExtResource("10_6opjh")
+
+[node name="Mode" parent="." instance=ExtResource("25_nts5e")]
+
+[connection signal="button_down" from="Fondo/ScoreHandling/1+" to="Label" method="_on_button_button_down"]
+[connection signal="pressed" from="Fondo/ScoreHandling/1+" to="Fondo/ScoreHandling/1+" method="_on_pressed"]
+[connection signal="button_down" from="Fondo/ScoreHandling/2+" to="Label" method="_on_button_button_down"]
+[connection signal="pressed" from="Fondo/ScoreHandling/2+" to="Fondo/ScoreHandling/2+" method="_on_pressed"]
+[connection signal="button_down" from="Fondo/ScoreHandling/1-" to="Label" method="_on_button_button_down"]
+[connection signal="pressed" from="Fondo/ScoreHandling/1-" to="Fondo/ScoreHandling/1-" method="_on_pressed"]
+[connection signal="button_down" from="Fondo/ScoreHandling/2-" to="Label" method="_on_button_button_down"]
+[connection signal="pressed" from="Fondo/ScoreHandling/2-" to="Fondo/ScoreHandling/2-" method="_on_pressed"]
+[connection signal="pressed" from="Fondo/ScoreHandling/spr_1+5/but_1+5" to="Fondo/ScoreHandling/spr_1+5/but_1+5" method="_on_pressed"]
+[connection signal="pressed" from="Fondo/ScoreHandling/spr_1-5/but_1-5" to="Fondo/ScoreHandling/spr_1-5/but_1-5" method="_on_pressed"]
+[connection signal="pressed" from="Fondo/ScoreHandling/spr_2+5/but_2+5" to="Fondo/ScoreHandling/spr_2+5/but_2+5" method="_on_pressed"]
+[connection signal="pressed" from="Fondo/ScoreHandling/spr_2-5/but_2-5" to="Fondo/ScoreHandling/spr_2-5/but_2-5" method="_on_pressed"]
+[connection signal="pressed" from="Fondo/ScoreHandling/deleteall/clearscore" to="Fondo/ScoreHandling/deleteall/clearscore" method="_on_pressed"]
+[connection signal="focus_entered" from="Fondo/NameHandling/NosBox/LineEdit" to="Fondo/NameHandling/NosBox/LineEdit" method="_on_focus_entered"]
+[connection signal="focus_exited" from="Fondo/NameHandling/NosBox/LineEdit" to="Fondo/NameHandling/NosBox/LineEdit" method="_on_focus_exited"]
+[connection signal="gui_input" from="Fondo/NameHandling/NosBox/LineEdit" to="Fondo/NameHandling/NosBox/LineEdit" method="_on_gui_input"]
+[connection signal="text_changed" from="Fondo/NameHandling/NosBox/LineEdit" to="Fondo/NameHandling/NosBox/LineEdit" method="_on_text_changed"]
+[connection signal="focus_entered" from="Fondo/NameHandling/EllosBox/LineEditEllos" to="Fondo/NameHandling/EllosBox/LineEditEllos" method="_on_focus_entered"]
+[connection signal="focus_exited" from="Fondo/NameHandling/EllosBox/LineEditEllos" to="Fondo/NameHandling/EllosBox/LineEditEllos" method="_on_focus_exited"]
+[connection signal="gui_input" from="Fondo/NameHandling/EllosBox/LineEditEllos" to="Fondo/NameHandling/EllosBox/LineEditEllos" method="_on_gui_input"]
+[connection signal="text_changed" from="Fondo/NameHandling/EllosBox/LineEditEllos" to="Fondo/NameHandling/EllosBox/LineEditEllos" method="_on_text_changed"]
