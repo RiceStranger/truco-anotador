@@ -73,7 +73,7 @@ offset_right = -767.0
 offset_bottom = -213.0
 theme_override_fonts/font = ExtResource("2_wkr5e")
 theme_override_font_sizes/font_size = 30
-text = "v1.1"
+text = "v1.0.0"
 
 [connection signal="pressed" from="ModeSpr/ModeBt" to="ModeSpr/ModeBt" method="_on_pressed"]
 [connection signal="pressed" from="ModeSpr/ModeBt" to="ModeSpr/ModeText" method="_on_pressed"]
