@@ -1,0 +1,747 @@
+[gd_scene load_steps=51 format=3 uid="uid://cmse83wc0r4lr"]
+
+[ext_resource type="Texture2D" uid="uid://c0gvhiepcsrfb" path="res://wooden_wall.jpg" id="1_88ycq"]
+[ext_resource type="PackedScene" uid="uid://nbdk8jqrta48" path="res://mode.tscn" id="2_0yhox"]
+[ext_resource type="Texture2D" uid="uid://c2jwpaqmolehv" path="res://little black thing.png" id="3_nnt8i"]
+[ext_resource type="Script" path="res://nameG2.gd" id="4_7f6g6"]
+[ext_resource type="FontFile" uid="uid://bgbkh1m6c1l4m" path="res://times.ttf" id="4_57j86"]
+[ext_resource type="Script" path="res://nameG1.gd" id="4_hfuoi"]
+[ext_resource type="Script" path="res://nameG1edit.gd" id="4_mmho0"]
+[ext_resource type="Script" path="res://nameG2edit.gd" id="5_gleuw"]
+[ext_resource type="FontFile" uid="uid://c5x2jqbcw7uph" path="res://NotoSans-Regular.ttf" id="7_4if7e"]
+[ext_resource type="Script" path="res://num_g_2.gd" id="7_hcywq"]
+[ext_resource type="Script" path="res://num_g_1.gd" id="8_4jqlu"]
+[ext_resource type="Texture2D" uid="uid://bcuswajkltvtn" path="res://plus1.png" id="8_7k1lb"]
+[ext_resource type="Script" path="res://+1G2.gd" id="9_3stgl"]
+[ext_resource type="Script" path="res://g1+1.gd" id="9_wv0nn"]
+[ext_resource type="Script" path="res://g2-1.gd" id="11_1cmqn"]
+[ext_resource type="Texture2D" uid="uid://dnquidv8d22rk" path="res://circl-_spr.png" id="11_r5jaj"]
+[ext_resource type="Script" path="res://g_1_1.gd" id="12_tfpf7"]
+[ext_resource type="Texture2D" uid="uid://krij22f4fjet" path="res://score+3_spr.png" id="13_mgi8p"]
+[ext_resource type="Script" path="res://g2+3.gd" id="13_w67it"]
+[ext_resource type="Script" path="res://g1+3.gd" id="14_n8i7k"]
+[ext_resource type="Texture2D" uid="uid://hymlykuu3rx3" path="res://chain.png" id="15_8fv7w"]
+[ext_resource type="Script" path="res://btn_chain_1.gd" id="16_y0odv"]
+[ext_resource type="Script" path="res://nameG3.gd" id="21_sev8g"]
+[ext_resource type="Script" path="res://nameG3edit.gd" id="22_yx5dj"]
+[ext_resource type="Script" path="res://btn_chain_2.gd" id="23_bihpf"]
+[ext_resource type="Script" path="res://num_g_3.gd" id="23_d585m"]
+[ext_resource type="Script" path="res://G3+1.gd" id="24_cd50o"]
+[ext_resource type="Script" path="res://G3-1.gd" id="25_pja1t"]
+[ext_resource type="Script" path="res://G3+3.gd" id="26_y64s4"]
+[ext_resource type="Script" path="res://nameG4.gd" id="27_xluis"]
+[ext_resource type="Script" path="res://nameG4edit.gd" id="28_xer8i"]
+[ext_resource type="Script" path="res://num_g_4.gd" id="29_ukfhm"]
+[ext_resource type="Script" path="res://btn_chain_3.gd" id="30_gpng8"]
+[ext_resource type="Script" path="res://G4+1.gd" id="30_u0rng"]
+[ext_resource type="Script" path="res://G4-1.gd" id="31_t4qng"]
+[ext_resource type="Script" path="res://G4+3.gd" id="32_lwgty"]
+[ext_resource type="Script" path="res://nameG5.gd" id="33_0kms2"]
+[ext_resource type="Script" path="res://nameG5edit.gd" id="34_e7udy"]
+[ext_resource type="Script" path="res://num_g_5.gd" id="35_olph5"]
+[ext_resource type="Script" path="res://G5+1.gd" id="36_7ewgt"]
+[ext_resource type="Script" path="res://G5-1.gd" id="37_52luv"]
+[ext_resource type="Script" path="res://btn_chain_4.gd" id="37_svovy"]
+[ext_resource type="Script" path="res://G5+3.gd" id="38_q7mir"]
+[ext_resource type="Script" path="res://btn_chain_5.gd" id="44_4i4ig"]
+[ext_resource type="Texture2D" uid="uid://dgrd36vqj3moh" path="res://scoreReset_spr.png" id="45_01n2v"]
+[ext_resource type="Script" path="res://resetG.gd" id="46_00n32"]
+[ext_resource type="Texture2D" uid="uid://c0keo2lwec1c7" path="res://score+1max_spr.png" id="47_4dqp4"]
+[ext_resource type="Script" path="res://max1G.gd" id="48_0mit3"]
+[ext_resource type="Texture2D" uid="uid://d06t287noing5" path="res://score-1max_spr.png" id="49_s6y4k"]
+[ext_resource type="Script" path="res://max-G.gd" id="50_6i0bp"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Fondo" type="Sprite2D" parent="."]
+position = Vector2(540.5, 556.5)
+scale = Vector2(0.257, 0.567)
+texture = ExtResource("1_88ycq")
+
+[node name="Mode" parent="." instance=ExtResource("2_0yhox")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(465, 560)
+scale = Vector2(-357.231, 117.707)
+zoom = Vector2(0.1, 0.1)
+
+[node name="NameG" type="Sprite2D" parent="Camera2D"]
+
+[node name="NameHandlingG" type="Node" parent="."]
+
+[node name="NameG1" type="Node" parent="NameHandlingG"]
+
+[node name="Label" type="Label" parent="NameHandlingG/NameG1"]
+z_index = 3
+offset_left = 59.0
+offset_top = 32.0
+offset_right = 879.0
+offset_bottom = 137.0
+theme_override_fonts/font = ExtResource("4_57j86")
+theme_override_font_sizes/font_size = 80
+text = "Raúl"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("4_hfuoi")
+metadata/_edit_use_anchors_ = true
+
+[node name="LineEdit" type="LineEdit" parent="NameHandlingG/NameG1"]
+modulate = Color(1, 1, 1, 0)
+z_index = 5
+offset_left = 54.0
+offset_top = 28.0
+offset_right = 881.0
+offset_bottom = 138.0
+theme_override_fonts/font = ExtResource("4_57j86")
+theme_override_font_sizes/font_size = 90
+script = ExtResource("4_mmho0")
+metadata/_edit_use_anchors_ = true
+
+[node name="scoreG1" type="Sprite2D" parent="NameHandlingG/NameG1"]
+position = Vector2(0, -92)
+
+[node name="numG1" type="Label" parent="NameHandlingG/NameG1/scoreG1"]
+offset_left = 351.0
+offset_top = 253.0
+offset_right = 545.0
+offset_bottom = 404.0
+theme_override_fonts/font = ExtResource("7_4if7e")
+theme_override_font_sizes/font_size = 110
+text = "7"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("8_4jqlu")
+metadata/_edit_use_anchors_ = true
+
+[node name="spr1+1" type="Sprite2D" parent="NameHandlingG/NameG1/scoreG1"]
+position = Vector2(295.875, 316)
+scale = Vector2(0.664573, 0.691837)
+texture = ExtResource("8_7k1lb")
+
+[node name="G1+1" type="Button" parent="NameHandlingG/NameG1/scoreG1/spr1+1"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -92.0
+offset_top = -91.0
+offset_right = 95.0
+offset_bottom = 93.0
+theme_override_icons/icon = ExtResource("8_7k1lb")
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("9_wv0nn")
+metadata/_edit_use_anchors_ = true
+
+[node name="spr1-1" type="Sprite2D" parent="NameHandlingG/NameG1/scoreG1"]
+position = Vector2(602.25, 320.75)
+scale = Vector2(1.36765, 1.34804)
+texture = ExtResource("11_r5jaj")
+
+[node name="G1-1" type="Button" parent="NameHandlingG/NameG1/scoreG1/spr1-1"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -47.0
+offset_top = -44.0
+offset_right = 45.0
+offset_bottom = 43.0
+theme_override_icons/icon = ExtResource("8_7k1lb")
+icon = ExtResource("11_r5jaj")
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("12_tfpf7")
+metadata/_edit_use_anchors_ = true
+
+[node name="spr1+3" type="Sprite2D" parent="NameHandlingG/NameG1/scoreG1"]
+position = Vector2(135, 316)
+texture = ExtResource("13_mgi8p")
+
+[node name="G1+3" type="Button" parent="NameHandlingG/NameG1/scoreG1/spr1+3"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -80.0
+offset_top = -59.0
+offset_right = 79.0
+offset_bottom = 64.0
+icon = ExtResource("13_mgi8p")
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("14_n8i7k")
+metadata/_edit_use_anchors_ = true
+
+[node name="NameG1" type="Sprite2D" parent="NameHandlingG/NameG1/scoreG1"]
+modulate = Color(1, 1, 1, 0.552941)
+position = Vector2(467.99, 177)
+scale = Vector2(22.2708, 2.32)
+texture = ExtResource("3_nnt8i")
+
+[node name="chain1" type="Sprite2D" parent="NameHandlingG/NameG1/scoreG1"]
+position = Vector2(767, 320)
+texture = ExtResource("15_8fv7w")
+
+[node name="btn_chain1" type="Button" parent="NameHandlingG/NameG1/scoreG1/chain1"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -72.0
+offset_top = -62.0
+offset_right = 78.0
+offset_bottom = 59.0
+script = ExtResource("16_y0odv")
+
+[node name="NameG2" type="Node" parent="NameHandlingG"]
+
+[node name="Label" type="Label" parent="NameHandlingG/NameG2"]
+z_index = 3
+offset_left = 59.0
+offset_top = 318.0
+offset_right = 879.0
+offset_bottom = 423.0
+theme_override_fonts/font = ExtResource("4_57j86")
+theme_override_font_sizes/font_size = 80
+text = "Raúl"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("4_7f6g6")
+metadata/_edit_use_anchors_ = true
+
+[node name="LineEdit" type="LineEdit" parent="NameHandlingG/NameG2"]
+modulate = Color(1, 1, 1, 0)
+z_index = 5
+offset_left = 54.0
+offset_top = 314.0
+offset_right = 881.0
+offset_bottom = 424.0
+theme_override_fonts/font = ExtResource("4_57j86")
+theme_override_font_sizes/font_size = 90
+script = ExtResource("5_gleuw")
+metadata/_edit_use_anchors_ = true
+
+[node name="scoreG2" type="Sprite2D" parent="NameHandlingG/NameG2"]
+position = Vector2(0, 194)
+
+[node name="numG2" type="Label" parent="NameHandlingG/NameG2/scoreG2"]
+offset_left = 351.0
+offset_top = 253.0
+offset_right = 545.0
+offset_bottom = 404.0
+theme_override_fonts/font = ExtResource("7_4if7e")
+theme_override_font_sizes/font_size = 110
+text = "7"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("7_hcywq")
+metadata/_edit_use_anchors_ = true
+
+[node name="spr2+1" type="Sprite2D" parent="NameHandlingG/NameG2/scoreG2"]
+position = Vector2(295.875, 316)
+scale = Vector2(0.664573, 0.691837)
+texture = ExtResource("8_7k1lb")
+
+[node name="G2+1" type="Button" parent="NameHandlingG/NameG2/scoreG2/spr2+1"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -92.0
+offset_top = -91.0
+offset_right = 95.0
+offset_bottom = 93.0
+theme_override_icons/icon = ExtResource("8_7k1lb")
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("9_3stgl")
+metadata/_edit_use_anchors_ = true
+
+[node name="spr2-1" type="Sprite2D" parent="NameHandlingG/NameG2/scoreG2"]
+position = Vector2(602.25, 320.75)
+scale = Vector2(1.36765, 1.34804)
+texture = ExtResource("11_r5jaj")
+
+[node name="G2-1" type="Button" parent="NameHandlingG/NameG2/scoreG2/spr2-1"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -47.0
+offset_top = -44.0
+offset_right = 45.0
+offset_bottom = 43.0
+theme_override_icons/icon = ExtResource("8_7k1lb")
+icon = ExtResource("11_r5jaj")
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("11_1cmqn")
+metadata/_edit_use_anchors_ = true
+
+[node name="spr2+3" type="Sprite2D" parent="NameHandlingG/NameG2/scoreG2"]
+position = Vector2(135, 316)
+texture = ExtResource("13_mgi8p")
+
+[node name="G2+3" type="Button" parent="NameHandlingG/NameG2/scoreG2/spr2+3"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -80.0
+offset_top = -59.0
+offset_right = 79.0
+offset_bottom = 64.0
+icon = ExtResource("13_mgi8p")
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("13_w67it")
+metadata/_edit_use_anchors_ = true
+
+[node name="Name2" type="Sprite2D" parent="NameHandlingG/NameG2/scoreG2"]
+modulate = Color(1, 1, 1, 0.552941)
+position = Vector2(467.99, 177)
+scale = Vector2(22.2708, 2.32)
+texture = ExtResource("3_nnt8i")
+
+[node name="chain2" type="Sprite2D" parent="NameHandlingG/NameG2/scoreG2"]
+position = Vector2(767, 320)
+texture = ExtResource("15_8fv7w")
+
+[node name="btn_chain2" type="Button" parent="NameHandlingG/NameG2/scoreG2/chain2"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -78.0
+offset_top = -72.0
+offset_right = 80.0
+offset_bottom = 61.0
+script = ExtResource("23_bihpf")
+
+[node name="NameG3" type="Node" parent="NameHandlingG"]
+
+[node name="Label" type="Label" parent="NameHandlingG/NameG3"]
+z_index = 3
+offset_left = 59.0
+offset_top = 601.0
+offset_right = 879.0
+offset_bottom = 706.0
+theme_override_fonts/font = ExtResource("4_57j86")
+theme_override_font_sizes/font_size = 80
+text = "Raúl"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("21_sev8g")
+metadata/_edit_use_anchors_ = true
+
+[node name="LineEdit" type="LineEdit" parent="NameHandlingG/NameG3"]
+modulate = Color(1, 1, 1, 0)
+z_index = 5
+offset_left = 54.0
+offset_top = 597.0
+offset_right = 881.0
+offset_bottom = 707.0
+theme_override_fonts/font = ExtResource("4_57j86")
+theme_override_font_sizes/font_size = 90
+script = ExtResource("22_yx5dj")
+metadata/_edit_use_anchors_ = true
+
+[node name="scoreG3" type="Sprite2D" parent="NameHandlingG/NameG3"]
+position = Vector2(0, 477)
+
+[node name="numG3" type="Label" parent="NameHandlingG/NameG3/scoreG3"]
+offset_left = 351.0
+offset_top = 253.0
+offset_right = 545.0
+offset_bottom = 404.0
+theme_override_fonts/font = ExtResource("7_4if7e")
+theme_override_font_sizes/font_size = 110
+text = "7"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("23_d585m")
+metadata/_edit_use_anchors_ = true
+
+[node name="spr3+1" type="Sprite2D" parent="NameHandlingG/NameG3/scoreG3"]
+position = Vector2(295.875, 316)
+scale = Vector2(0.664573, 0.691837)
+texture = ExtResource("8_7k1lb")
+
+[node name="G3+1" type="Button" parent="NameHandlingG/NameG3/scoreG3/spr3+1"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -92.0
+offset_top = -91.0
+offset_right = 95.0
+offset_bottom = 93.0
+theme_override_icons/icon = ExtResource("8_7k1lb")
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("24_cd50o")
+metadata/_edit_use_anchors_ = true
+
+[node name="spr3-1" type="Sprite2D" parent="NameHandlingG/NameG3/scoreG3"]
+position = Vector2(602.25, 320.75)
+scale = Vector2(1.36765, 1.34804)
+texture = ExtResource("11_r5jaj")
+
+[node name="G3-1" type="Button" parent="NameHandlingG/NameG3/scoreG3/spr3-1"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -47.0
+offset_top = -44.0
+offset_right = 45.0
+offset_bottom = 43.0
+theme_override_icons/icon = ExtResource("8_7k1lb")
+icon = ExtResource("11_r5jaj")
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("25_pja1t")
+metadata/_edit_use_anchors_ = true
+
+[node name="spr3+3" type="Sprite2D" parent="NameHandlingG/NameG3/scoreG3"]
+position = Vector2(135, 316)
+texture = ExtResource("13_mgi8p")
+
+[node name="G3+3" type="Button" parent="NameHandlingG/NameG3/scoreG3/spr3+3"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -80.0
+offset_top = -59.0
+offset_right = 79.0
+offset_bottom = 64.0
+icon = ExtResource("13_mgi8p")
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("26_y64s4")
+metadata/_edit_use_anchors_ = true
+
+[node name="NameG3" type="Sprite2D" parent="NameHandlingG/NameG3/scoreG3"]
+modulate = Color(1, 1, 1, 0.552941)
+position = Vector2(467.99, 177)
+scale = Vector2(22.2708, 2.32)
+texture = ExtResource("3_nnt8i")
+
+[node name="chain3" type="Sprite2D" parent="NameHandlingG/NameG3/scoreG3"]
+position = Vector2(767, 320)
+texture = ExtResource("15_8fv7w")
+
+[node name="btn_chain3" type="Button" parent="NameHandlingG/NameG3/scoreG3/chain3"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -78.0
+offset_top = -72.0
+offset_right = 80.0
+offset_bottom = 61.0
+script = ExtResource("30_gpng8")
+
+[node name="NameG4" type="Node" parent="NameHandlingG"]
+
+[node name="Label" type="Label" parent="NameHandlingG/NameG4"]
+z_index = 3
+offset_left = 59.0
+offset_top = 886.0
+offset_right = 879.0
+offset_bottom = 991.0
+theme_override_fonts/font = ExtResource("4_57j86")
+theme_override_font_sizes/font_size = 80
+text = "Raúl"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("27_xluis")
+metadata/_edit_use_anchors_ = true
+
+[node name="LineEdit" type="LineEdit" parent="NameHandlingG/NameG4"]
+modulate = Color(1, 1, 1, 0)
+z_index = 5
+offset_left = 54.0
+offset_top = 882.0
+offset_right = 881.0
+offset_bottom = 992.0
+theme_override_fonts/font = ExtResource("4_57j86")
+theme_override_font_sizes/font_size = 90
+script = ExtResource("28_xer8i")
+metadata/_edit_use_anchors_ = true
+
+[node name="scoreG4" type="Sprite2D" parent="NameHandlingG/NameG4"]
+position = Vector2(0, 762)
+
+[node name="numG4" type="Label" parent="NameHandlingG/NameG4/scoreG4"]
+offset_left = 351.0
+offset_top = 253.0
+offset_right = 545.0
+offset_bottom = 404.0
+theme_override_fonts/font = ExtResource("7_4if7e")
+theme_override_font_sizes/font_size = 110
+text = "7"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("29_ukfhm")
+metadata/_edit_use_anchors_ = true
+
+[node name="spr4+1" type="Sprite2D" parent="NameHandlingG/NameG4/scoreG4"]
+position = Vector2(295.875, 316)
+scale = Vector2(0.664573, 0.691837)
+texture = ExtResource("8_7k1lb")
+
+[node name="G4+1" type="Button" parent="NameHandlingG/NameG4/scoreG4/spr4+1"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -92.0
+offset_top = -91.0
+offset_right = 95.0
+offset_bottom = 93.0
+theme_override_icons/icon = ExtResource("8_7k1lb")
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("30_u0rng")
+metadata/_edit_use_anchors_ = true
+
+[node name="spr4-1" type="Sprite2D" parent="NameHandlingG/NameG4/scoreG4"]
+position = Vector2(602.25, 320.75)
+scale = Vector2(1.36765, 1.34804)
+texture = ExtResource("11_r5jaj")
+
+[node name="G4-1" type="Button" parent="NameHandlingG/NameG4/scoreG4/spr4-1"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -47.0
+offset_top = -44.0
+offset_right = 45.0
+offset_bottom = 43.0
+theme_override_icons/icon = ExtResource("8_7k1lb")
+icon = ExtResource("11_r5jaj")
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("31_t4qng")
+metadata/_edit_use_anchors_ = true
+
+[node name="spr4+3" type="Sprite2D" parent="NameHandlingG/NameG4/scoreG4"]
+position = Vector2(135, 316)
+texture = ExtResource("13_mgi8p")
+
+[node name="G4+3" type="Button" parent="NameHandlingG/NameG4/scoreG4/spr4+3"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -80.0
+offset_top = -59.0
+offset_right = 79.0
+offset_bottom = 64.0
+icon = ExtResource("13_mgi8p")
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("32_lwgty")
+metadata/_edit_use_anchors_ = true
+
+[node name="NameG4" type="Sprite2D" parent="NameHandlingG/NameG4/scoreG4"]
+modulate = Color(1, 1, 1, 0.552941)
+position = Vector2(467.99, 177)
+scale = Vector2(22.2708, 2.32)
+texture = ExtResource("3_nnt8i")
+
+[node name="chain4" type="Sprite2D" parent="NameHandlingG/NameG4/scoreG4"]
+position = Vector2(767, 320)
+texture = ExtResource("15_8fv7w")
+
+[node name="btn_chain4" type="Button" parent="NameHandlingG/NameG4/scoreG4/chain4"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -78.0
+offset_top = -72.0
+offset_right = 80.0
+offset_bottom = 61.0
+script = ExtResource("37_svovy")
+
+[node name="NameG5" type="Node" parent="NameHandlingG"]
+
+[node name="Label" type="Label" parent="NameHandlingG/NameG5"]
+z_index = 3
+offset_left = 59.0
+offset_top = 1168.0
+offset_right = 879.0
+offset_bottom = 1273.0
+theme_override_fonts/font = ExtResource("4_57j86")
+theme_override_font_sizes/font_size = 80
+text = "Raúl"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("33_0kms2")
+metadata/_edit_use_anchors_ = true
+
+[node name="LineEdit" type="LineEdit" parent="NameHandlingG/NameG5"]
+modulate = Color(1, 1, 1, 0)
+z_index = 5
+offset_left = 54.0
+offset_top = 1164.0
+offset_right = 881.0
+offset_bottom = 1274.0
+theme_override_fonts/font = ExtResource("4_57j86")
+theme_override_font_sizes/font_size = 90
+script = ExtResource("34_e7udy")
+metadata/_edit_use_anchors_ = true
+
+[node name="scoreG5" type="Sprite2D" parent="NameHandlingG/NameG5"]
+position = Vector2(0, 1044)
+
+[node name="numG5" type="Label" parent="NameHandlingG/NameG5/scoreG5"]
+offset_left = 351.0
+offset_top = 253.0
+offset_right = 545.0
+offset_bottom = 404.0
+theme_override_fonts/font = ExtResource("7_4if7e")
+theme_override_font_sizes/font_size = 110
+text = "7"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("35_olph5")
+metadata/_edit_use_anchors_ = true
+
+[node name="spr5+1" type="Sprite2D" parent="NameHandlingG/NameG5/scoreG5"]
+position = Vector2(295.875, 316)
+scale = Vector2(0.664573, 0.691837)
+texture = ExtResource("8_7k1lb")
+
+[node name="G5+1" type="Button" parent="NameHandlingG/NameG5/scoreG5/spr5+1"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -92.0
+offset_top = -91.0
+offset_right = 95.0
+offset_bottom = 93.0
+theme_override_icons/icon = ExtResource("8_7k1lb")
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("36_7ewgt")
+metadata/_edit_use_anchors_ = true
+
+[node name="spr5-1" type="Sprite2D" parent="NameHandlingG/NameG5/scoreG5"]
+position = Vector2(602.25, 320.75)
+scale = Vector2(1.36765, 1.34804)
+texture = ExtResource("11_r5jaj")
+
+[node name="G5-1" type="Button" parent="NameHandlingG/NameG5/scoreG5/spr5-1"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -47.0
+offset_top = -44.0
+offset_right = 45.0
+offset_bottom = 43.0
+theme_override_icons/icon = ExtResource("8_7k1lb")
+icon = ExtResource("11_r5jaj")
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("37_52luv")
+metadata/_edit_use_anchors_ = true
+
+[node name="spr5+3" type="Sprite2D" parent="NameHandlingG/NameG5/scoreG5"]
+position = Vector2(135, 316)
+texture = ExtResource("13_mgi8p")
+
+[node name="G5+3" type="Button" parent="NameHandlingG/NameG5/scoreG5/spr5+3"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -80.0
+offset_top = -59.0
+offset_right = 79.0
+offset_bottom = 64.0
+icon = ExtResource("13_mgi8p")
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("38_q7mir")
+metadata/_edit_use_anchors_ = true
+
+[node name="NameG5" type="Sprite2D" parent="NameHandlingG/NameG5/scoreG5"]
+modulate = Color(1, 1, 1, 0.552941)
+position = Vector2(467.99, 177)
+scale = Vector2(22.2708, 2.32)
+texture = ExtResource("3_nnt8i")
+
+[node name="chain5" type="Sprite2D" parent="NameHandlingG/NameG5/scoreG5"]
+position = Vector2(767, 320)
+texture = ExtResource("15_8fv7w")
+
+[node name="btn_chain5" type="Button" parent="NameHandlingG/NameG5/scoreG5/chain5"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -78.0
+offset_top = -72.0
+offset_right = 80.0
+offset_bottom = 61.0
+script = ExtResource("44_4i4ig")
+
+[node name="Fondo2" type="Sprite2D" parent="."]
+position = Vector2(540.5, 2121)
+scale = Vector2(0.257284, 0.567443)
+texture = ExtResource("1_88ycq")
+flip_v = true
+
+[node name="Fondo3" type="Sprite2D" parent="."]
+position = Vector2(540.5, -1036)
+scale = Vector2(0.257284, 0.567443)
+texture = ExtResource("1_88ycq")
+flip_v = true
+
+[node name="ScoreHandlingG" type="Node" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="ScoreHandlingG"]
+position = Vector2(472, -283)
+scale = Vector2(1.24009, 0.720779)
+texture = ExtResource("45_01n2v")
+
+[node name="Button" type="Button" parent="ScoreHandlingG/Sprite2D"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -215.0
+offset_top = -60.0
+offset_right = 181.0
+offset_bottom = 74.0
+script = ExtResource("46_00n32")
+
+[node name="Sprite2D2" type="Sprite2D" parent="ScoreHandlingG"]
+position = Vector2(214, -120)
+scale = Vector2(0.505872, 0.564935)
+texture = ExtResource("47_4dqp4")
+
+[node name="Button" type="Button" parent="ScoreHandlingG/Sprite2D2"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -287.0
+offset_top = -76.0
+offset_right = 239.0
+offset_bottom = 71.0
+script = ExtResource("48_0mit3")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ScoreHandlingG"]
+position = Vector2(730, -117.5)
+scale = Vector2(0.564953, 0.551948)
+texture = ExtResource("49_s6y4k")
+
+[node name="Button" type="Button" parent="ScoreHandlingG/Sprite2D3"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -248.0
+offset_top = -64.0
+offset_right = 218.0
+offset_bottom = 73.0
+script = ExtResource("50_6i0bp")
+
+[connection signal="focus_entered" from="NameHandlingG/NameG1/LineEdit" to="NameHandlingG/NameG1/LineEdit" method="_on_focus_entered"]
+[connection signal="focus_exited" from="NameHandlingG/NameG1/LineEdit" to="NameHandlingG/NameG1/LineEdit" method="_on_focus_exited"]
+[connection signal="gui_input" from="NameHandlingG/NameG1/LineEdit" to="NameHandlingG/NameG1/LineEdit" method="_on_gui_input"]
+[connection signal="text_changed" from="NameHandlingG/NameG1/LineEdit" to="NameHandlingG/NameG1/LineEdit" method="_on_text_changed"]
+[connection signal="pressed" from="NameHandlingG/NameG1/scoreG1/spr1+1/G1+1" to="NameHandlingG/NameG1/scoreG1/spr1+1/G1+1" method="_on_pressed"]
+[connection signal="pressed" from="NameHandlingG/NameG1/scoreG1/spr1-1/G1-1" to="NameHandlingG/NameG1/scoreG1/spr1-1/G1-1" method="_on_pressed"]
+[connection signal="pressed" from="NameHandlingG/NameG1/scoreG1/spr1+3/G1+3" to="NameHandlingG/NameG1/scoreG1/spr1+3/G1+3" method="_on_pressed"]
+[connection signal="pressed" from="NameHandlingG/NameG1/scoreG1/chain1/btn_chain1" to="NameHandlingG/NameG1/scoreG1/chain1/btn_chain1" method="_on_pressed"]
+[connection signal="focus_entered" from="NameHandlingG/NameG2/LineEdit" to="NameHandlingG/NameG2/LineEdit" method="_on_focus_entered"]
+[connection signal="focus_exited" from="NameHandlingG/NameG2/LineEdit" to="NameHandlingG/NameG2/LineEdit" method="_on_focus_exited"]
+[connection signal="gui_input" from="NameHandlingG/NameG2/LineEdit" to="NameHandlingG/NameG2/LineEdit" method="_on_gui_input"]
+[connection signal="text_changed" from="NameHandlingG/NameG2/LineEdit" to="NameHandlingG/NameG2/LineEdit" method="_on_text_changed"]
+[connection signal="pressed" from="NameHandlingG/NameG2/scoreG2/spr2+1/G2+1" to="NameHandlingG/NameG2/scoreG2/spr2+1/G2+1" method="_on_pressed"]
+[connection signal="pressed" from="NameHandlingG/NameG2/scoreG2/spr2-1/G2-1" to="NameHandlingG/NameG2/scoreG2/spr2-1/G2-1" method="_on_pressed"]
+[connection signal="pressed" from="NameHandlingG/NameG2/scoreG2/spr2+3/G2+3" to="NameHandlingG/NameG2/scoreG2/spr2+3/G2+3" method="_on_pressed"]
+[connection signal="pressed" from="NameHandlingG/NameG2/scoreG2/chain2/btn_chain2" to="NameHandlingG/NameG2/scoreG2/chain2/btn_chain2" method="_on_pressed"]
+[connection signal="focus_entered" from="NameHandlingG/NameG3/LineEdit" to="NameHandlingG/NameG3/LineEdit" method="_on_focus_entered"]
+[connection signal="focus_exited" from="NameHandlingG/NameG3/LineEdit" to="NameHandlingG/NameG3/LineEdit" method="_on_focus_exited"]
+[connection signal="gui_input" from="NameHandlingG/NameG3/LineEdit" to="NameHandlingG/NameG3/LineEdit" method="_on_gui_input"]
+[connection signal="text_changed" from="NameHandlingG/NameG3/LineEdit" to="NameHandlingG/NameG3/LineEdit" method="_on_text_changed"]
+[connection signal="pressed" from="NameHandlingG/NameG3/scoreG3/spr3+1/G3+1" to="NameHandlingG/NameG3/scoreG3/spr3+1/G3+1" method="_on_pressed"]
+[connection signal="pressed" from="NameHandlingG/NameG3/scoreG3/spr3-1/G3-1" to="NameHandlingG/NameG3/scoreG3/spr3-1/G3-1" method="_on_pressed"]
+[connection signal="pressed" from="NameHandlingG/NameG3/scoreG3/spr3+3/G3+3" to="NameHandlingG/NameG3/scoreG3/spr3+3/G3+3" method="_on_pressed"]
+[connection signal="pressed" from="NameHandlingG/NameG3/scoreG3/chain3/btn_chain3" to="NameHandlingG/NameG3/scoreG3/chain3/btn_chain3" method="_on_pressed"]
+[connection signal="focus_entered" from="NameHandlingG/NameG4/LineEdit" to="NameHandlingG/NameG4/LineEdit" method="_on_focus_entered"]
+[connection signal="focus_exited" from="NameHandlingG/NameG4/LineEdit" to="NameHandlingG/NameG4/LineEdit" method="_on_focus_exited"]
+[connection signal="gui_input" from="NameHandlingG/NameG4/LineEdit" to="NameHandlingG/NameG4/LineEdit" method="_on_gui_input"]
+[connection signal="text_changed" from="NameHandlingG/NameG4/LineEdit" to="NameHandlingG/NameG4/LineEdit" method="_on_text_changed"]
+[connection signal="pressed" from="NameHandlingG/NameG4/scoreG4/spr4+1/G4+1" to="NameHandlingG/NameG4/scoreG4/spr4+1/G4+1" method="_on_pressed"]
+[connection signal="pressed" from="NameHandlingG/NameG4/scoreG4/spr4-1/G4-1" to="NameHandlingG/NameG4/scoreG4/spr4-1/G4-1" method="_on_pressed"]
+[connection signal="pressed" from="NameHandlingG/NameG4/scoreG4/spr4+3/G4+3" to="NameHandlingG/NameG4/scoreG4/spr4+3/G4+3" method="_on_pressed"]
+[connection signal="pressed" from="NameHandlingG/NameG4/scoreG4/chain4/btn_chain4" to="NameHandlingG/NameG4/scoreG4/chain4/btn_chain4" method="_on_pressed"]
+[connection signal="focus_entered" from="NameHandlingG/NameG5/LineEdit" to="NameHandlingG/NameG5/LineEdit" method="_on_focus_entered"]
+[connection signal="focus_exited" from="NameHandlingG/NameG5/LineEdit" to="NameHandlingG/NameG5/LineEdit" method="_on_focus_exited"]
+[connection signal="gui_input" from="NameHandlingG/NameG5/LineEdit" to="NameHandlingG/NameG5/LineEdit" method="_on_gui_input"]
+[connection signal="text_changed" from="NameHandlingG/NameG5/LineEdit" to="NameHandlingG/NameG5/LineEdit" method="_on_text_changed"]
+[connection signal="pressed" from="NameHandlingG/NameG5/scoreG5/spr5+1/G5+1" to="NameHandlingG/NameG5/scoreG5/spr5+1/G5+1" method="_on_pressed"]
+[connection signal="pressed" from="NameHandlingG/NameG5/scoreG5/spr5-1/G5-1" to="NameHandlingG/NameG5/scoreG5/spr5-1/G5-1" method="_on_pressed"]
+[connection signal="pressed" from="NameHandlingG/NameG5/scoreG5/spr5+3/G5+3" to="NameHandlingG/NameG5/scoreG5/spr5+3/G5+3" method="_on_pressed"]
+[connection signal="pressed" from="NameHandlingG/NameG5/scoreG5/chain5/btn_chain5" to="NameHandlingG/NameG5/scoreG5/chain5/btn_chain5" method="_on_pressed"]
+[connection signal="pressed" from="ScoreHandlingG/Sprite2D/Button" to="ScoreHandlingG/Sprite2D/Button" method="_on_pressed"]
+[connection signal="pressed" from="ScoreHandlingG/Sprite2D2/Button" to="ScoreHandlingG/Sprite2D2/Button" method="_on_pressed"]
+[connection signal="pressed" from="ScoreHandlingG/Sprite2D3/Button" to="ScoreHandlingG/Sprite2D3/Button" method="_on_pressed"]
