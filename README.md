@@ -3,7 +3,8 @@
 ([Traducción al español](README_ES.md))
 
 Simple, free and adless open source scorer of the popular card game <b>Truco</b> for Android. Among its features, it has both a mode for normal Truco and <b>Truco Gallo</b> (version which can be played with any number of players, working as a free-for-all instead of a team like in normal Truco).
-<br> I know it's ugly, but it works. Also, this is my first project ever (made in Godot 4.2)
+<br>I know it's ugly, but it works. Also, this is my first project ever (made in Godot 4.2)
+<br>You can find the releases [here](https://github.com/RiceStranger/truco-anotador/releases)
 
 # Features
 ## Truco Normal
