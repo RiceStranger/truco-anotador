@@ -1,14 +1,14 @@
 # Anotador de Truco (Truco scorer)
 
-[traducción al español](markdown_ES.md)
+([Traducción al español](README_ES.md))
 
-Simple, free and adless open source scorer of the popular card game Truco for Android. Among its features, it has both a mode for normal Truco and <b>Truco Gallo</b> (version which can be played with any number of players, working as a free-for-all instead of a team like in normal Truco).
+Simple, free and adless open source scorer of the popular card game <b>Truco</b> for Android. Among its features, it has both a mode for normal Truco and <b>Truco Gallo</b> (version which can be played with any number of players, working as a free-for-all instead of a team like in normal Truco).
 <br> I know it's ugly, but it works. Also, this is my first project ever (made in Godot 4.2)
 
 # Features
 ## Truco Normal
 
-So far, it only has a 30-points mode (making a 40-points mode would mean to recalculate the whole scoring system). Points can be dded by tapping on the upper part, while they can be decreased by tapping on the below side.
+So far, it only has a 30-points mode (making a 40-points mode would mean to recalculate the whole scoring system). Points can be dded by tapping on the upper part, while they can be decreased by tapping on the below side.<br>
 There're also buttons to increase/decrease 3 points (useful for retruco, flor, envido + truco, etc.). Names for both teams can be edited<br>
 
 ## Truco Gallo
