@@ -1,0 +1,16 @@
+Anotador gratis, sencillo, open source y sin publicidad del popular juego de cartas truco. Entre sus características, tiene tanto un modo para Truco Normal y Truco Gallo (versión en la que se puede jugar con cualquier cantidad de jugadores, siendo como un todos-contra-todos en vez de por equipos como en el Truco normal).
+</br>Sé que se ve feo, pero funciona. Además, es mi primer proyecto (hecho en Godot 4.2)
+</br></br>
+Características del Truco Normal:</br>
+Por ahora, solo tiene modo de hasta 30 (hacer un modo de hasta 40 significaría recalcular todo el sistema de los puntos). Los puntos se pueden sumar ocando la parte de arriba, mientras se pueden quitar tocando la de abajo.
+</br>También hay botones para poner/sacar 3 puntos (útil para el retruco, flor, envido + truco, etc.). Los nombres de ambos equipos pueden ser editados.</br></br>
+Características del Truco Gallo:</br>
+Puede tener hasta 5 jugadores (no creo que nadie jugaría con más), con nombres configurables. El puntaje "máximo" (7 por defecto) puede ser editado, lo cual es útil al usarse el botón de reset. El puntaje de caa jugador puede ser individualmente editado, añadiendo o quitando puntos por 1 o sumando por 3.
+</br>También hay un botón para "engancharse" a un jugador; eso del Gallo de cuando alguien pierde, que tiene la posibilidad de volver a la partida con la cantidad de puntos del que menos tenga
+</br></br>
+Cosas a poner:</br>
+<li>Alguna clase de evento cuando alguien gane</li>
+<li>Un modo configurable que diga si la mano es pica pica o redonda</li>
+<li>Ser capaz de guardar puntos y nombres en vez de que se reseteen cada que la app se abre</li>
+<li>Tabla de valores de las cartas</li>
+<li>Tabla de valores de jugadas (ej: envido es 2, retruco es 3, etc.)</li>

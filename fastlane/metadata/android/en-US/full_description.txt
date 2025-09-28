@@ -1,0 +1,17 @@
+Simple, free and adless open source scorer of the popular card game Truco. Among its features, it has both a mode for normal Truco and Truco Gallo (version which can be played with any number of players, working as a free-for-all instead of a team like in normal Truco).
+</br>I know it's ugly, but it works. Also, this is my first project ever (made in Godot 4.2)
+</br></br>
+Truco Normal features:</br>
+So far, it only has a 30-points mode (making a 40-points mode would mean to recalculate the whole score displaying system). Points can be added by tapping on the upper part, while they can be decreased by tapping on the below side.
+</br>There're also buttons to increase/decrease 3 points (useful for retruco, flor, envido + truco, etc.). Names for both teams can be edited</br></br>
+
+Truco Gallo features:</br>
+It can have up to 5 players (I doubt anybody would play with more than that), with editable names. The base score (7 by default) can be edited, which is useful when using the reset button. Each player's score can be manually edited, increasing or decreasing its score by 1 and even adding 3 points.
+</br>There's also the way to "engancharse" to another player; that is, when somebody loses, there's the chance to come back to the game, but having as many points as the player with the lowest amount.
+</br></br>
+To-do list:</br>
+<li>Some kind of event when somebody wins</li>
+<li>A mode that says whether the hand is pica pica or redonda</li>
+<li>To be able to save scores and names instead of they resetting every time the app is used</li>
+<li>Cards value chart</li>
+<li>Chart depicting the value of different bets (eg, envido is 2, retruco is 3, etc.)</li>

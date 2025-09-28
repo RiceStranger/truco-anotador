@@ -1,0 +1,1 @@
+Scoring app for Truco and Truco Gallo, the card game
