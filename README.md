@@ -13,7 +13,8 @@ So far, it only has a 30-points mode (making a 40-points mode would mean to reca
 
 ## Truco Gallo
 
-It can have up to 5 players (I doubt anybody would play with more than that), with editable names. The base score (7 by default) can be edited, which is useful when using the reset button. Each player's score can be manually edited, increasing or decreasing its score by 1 and even adding 3 points. There's also the way to "<b>engancharse</b>" to another player; that is, when somebody loses, there's the chance to come back to the game, but having as many points as the player with the lowest amount. However, if playing for money, the one that does this must pay again in order to do so
+It can have up to 5 players (I doubt anybody would play with more than that), with editable names. The base score (7 by default) can be edited, which is useful when using the reset button. Each player's score can be manually edited, increasing or decreasing its score by 1 and even adding 3 points.
+<br>There's also the way to "<b>engancharse</b>" to another player; that is, when somebody loses, there's the chance to come back to the game, but having as many points as the player with the lowest amount. However, if playing for money, the one that does this must pay again in order to do so
 
 # To-do list
 
