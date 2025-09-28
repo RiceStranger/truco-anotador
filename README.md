@@ -8,8 +8,8 @@ Simple, free and adless open source scorer of the popular card game <b>Truco</b>
 # Features
 ## Truco Normal
 
-So far, it only has a 30-points mode (making a 40-points mode would mean to recalculate the whole scoring system). Points can be dded by tapping on the upper part, while they can be decreased by tapping on the below side.<br>
-There're also buttons to increase/decrease 3 points (useful for retruco, flor, envido + truco, etc.). Names for both teams can be edited<br>
+So far, it only has a 30-points mode (making a 40-points mode would mean to recalculate the whole scoring system). Points can be dded by tapping on the upper part, while they can be decreased by tapping on the below side.
+<br>There're also buttons to increase/decrease 3 points (useful for retruco, flor, envido + truco, etc.). Names for both teams can be edited<br>
 
 ## Truco Gallo
 
