@@ -1,7 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://c25psbsyhruhc"]
+[gd_scene load_steps=3 format=3 uid="uid://ckghfyfmllqsv"]
 
 [ext_resource type="Texture2D" uid="uid://bqfg76dstcrvg" path="res://fosforo2.png" id="1_n0osh"]
-[ext_resource type="Script" path="res://spawn.gd" id="2_4lq04"]
+[ext_resource type="Script" uid="uid://cp60q2l6hhuql" path="res://spawn.gd" id="2_4lq04"]
 
 [node name="FosforoSpawner1" type="Sprite2D"]
 scale = Vector2(1.00786, 0.940543)

@@ -3,7 +3,6 @@ extends LineEdit
 var tmp = false
 var backup = Global.nameG3
 
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	set_caret_column(Global.nameG3.length())
 	text = Global.nameG3
@@ -30,5 +29,5 @@ func _on_text_changed(new_text: String) -> void:
 		new_text = Global.nameG3
 
 
-func _on_gui_input(event: InputEvent) -> void:
+func _on_gui_input(_event: InputEvent) -> void:
 	caret_column = text.length()

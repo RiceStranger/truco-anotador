@@ -22,10 +22,13 @@ var nameG4 = "Juliana"
 var nameG5 = "Gustavo"
 var GalloVALS = [Gallo1, Gallo2, Gallo3, Gallo4, Gallo5]
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	GalloVALS = [Gallo1, Gallo2, Gallo3, Gallo4, Gallo5]
 # ints, bools y strings todos juntos
 func wait(timex):
 	timex = timex * 1.0
 	await get_tree().create_timer(timex).timeout
+	
+func overZero(num0):
+	return num0 > 0
 	

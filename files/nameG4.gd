@@ -2,7 +2,7 @@ extends Label
 
 var textbackup = Global.nameG4
 var shift_pressed = false
-# Called when the node enters the scene tree for the first time.
+
 func _ready() -> void:
 	text = Global.nameG4
 	add_theme_font_size_override("font_size", 100)

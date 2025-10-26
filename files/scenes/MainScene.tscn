@@ -1,30 +1,30 @@
-[gd_scene load_steps=28 format=3 uid="uid://chneqs4mb3qjx"]
+[gd_scene load_steps=28 format=3 uid="uid://ddva7jca7h2gh"]
 
-[ext_resource type="Script" path="res://script1.gd" id="1_ssc0k"]
+[ext_resource type="Script" uid="uid://de4v4ybro1tho" path="res://script1.gd" id="1_ssc0k"]
 [ext_resource type="Texture2D" uid="uid://bcuswajkltvtn" path="res://plus1.png" id="2_vinmf"]
 [ext_resource type="Texture2D" uid="uid://c0gvhiepcsrfb" path="res://wooden_wall.jpg" id="3_ynffc"]
 [ext_resource type="Texture2D" uid="uid://b4ro2gd8ohrte" path="res://cruz.png" id="5_01cfn"]
-[ext_resource type="Script" path="res://1+.gd" id="5_fpena"]
-[ext_resource type="Script" path="res://score1label.gd" id="5_kbk8f"]
-[ext_resource type="Script" path="res://2+.gd" id="6_nupfi"]
-[ext_resource type="Script" path="res://1-.gd" id="6_xedso"]
-[ext_resource type="Script" path="res://2-.gd" id="8_0fas5"]
+[ext_resource type="Script" uid="uid://bcvprmcjs2txa" path="res://1+.gd" id="5_fpena"]
+[ext_resource type="Script" uid="uid://cp5bahkdarlhk" path="res://score1label.gd" id="5_kbk8f"]
+[ext_resource type="Script" uid="uid://c0mneyrnw2byv" path="res://2+.gd" id="6_nupfi"]
+[ext_resource type="Script" uid="uid://dsndxsmqrptaa" path="res://1-.gd" id="6_xedso"]
+[ext_resource type="Script" uid="uid://cryr2c25vtphl" path="res://2-.gd" id="8_0fas5"]
 [ext_resource type="Texture2D" uid="uid://krij22f4fjet" path="res://score+3_spr.png" id="9_njho3"]
-[ext_resource type="Script" path="res://label_2.gd" id="10_6opjh"]
-[ext_resource type="Script" path="res://1+5.gd" id="10_likom"]
+[ext_resource type="Script" uid="uid://8yw5o3nhrtgo" path="res://label_2.gd" id="10_6opjh"]
+[ext_resource type="Script" uid="uid://c6dwd71l0k45x" path="res://1+5.gd" id="10_likom"]
 [ext_resource type="Texture2D" uid="uid://dx4fels1eqmfr" path="res://score-3_spr.png" id="11_dwjbj"]
-[ext_resource type="Script" path="res://but_1-5.gd" id="12_ce0g5"]
-[ext_resource type="Script" path="res://2+5.gd" id="13_dgqp4"]
-[ext_resource type="Script" path="res://2-5.gd" id="14_aukeu"]
+[ext_resource type="Script" uid="uid://byx28lar1128g" path="res://but_1-5.gd" id="12_ce0g5"]
+[ext_resource type="Script" uid="uid://cnv1ythrx4sci" path="res://2+5.gd" id="13_dgqp4"]
+[ext_resource type="Script" uid="uid://4t08wwqst0ys" path="res://2-5.gd" id="14_aukeu"]
 [ext_resource type="Texture2D" uid="uid://cca8aabpfpf1f" path="res://delete.png" id="15_s3sih"]
-[ext_resource type="Script" path="res://clearscore.gd" id="16_judyg"]
+[ext_resource type="Script" uid="uid://t3xgjl87cpt5" path="res://clearscore.gd" id="16_judyg"]
 [ext_resource type="Texture2D" uid="uid://c2jwpaqmolehv" path="res://little black thing.png" id="17_p2qab"]
-[ext_resource type="Script" path="res://nos.gd" id="18_2vxvt"]
+[ext_resource type="Script" uid="uid://bhpc0nc18k417" path="res://nos.gd" id="18_2vxvt"]
 [ext_resource type="FontFile" uid="uid://bgbkh1m6c1l4m" path="res://times.ttf" id="18_ekwff"]
-[ext_resource type="Script" path="res://nos_line_edit.gd" id="20_sx0os"]
-[ext_resource type="Script" path="res://ellos.gd" id="21_3unaw"]
-[ext_resource type="Script" path="res://ellos_line_edit.gd" id="22_u2mxv"]
-[ext_resource type="PackedScene" uid="uid://nbdk8jqrta48" path="res://mode.tscn" id="25_nts5e"]
+[ext_resource type="Script" uid="uid://puf3gxuvqwnf" path="res://nos_line_edit.gd" id="20_sx0os"]
+[ext_resource type="Script" uid="uid://cagwt5phohy3k" path="res://ellos.gd" id="21_3unaw"]
+[ext_resource type="Script" uid="uid://bm5x372lgr8dx" path="res://ellos_line_edit.gd" id="22_u2mxv"]
+[ext_resource type="PackedScene" uid="uid://dm1tywip6pqx7" path="res://scenes/mode.tscn" id="25_ye0jt"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_2318t"]
 radius = 101.55
@@ -196,14 +196,14 @@ offset_top = -22.5589
 offset_right = 19.4836
 offset_bottom = 23.4411
 theme = SubResource("Theme_imyop")
-theme_override_colors/clear_button_color_pressed = Color(0, 0, 0, 0)
-theme_override_colors/clear_button_color = Color(0, 0, 0, 0)
-theme_override_colors/selection_color = Color(0, 0, 0, 0)
-theme_override_colors/caret_color = Color(0, 0, 0, 0)
-theme_override_colors/font_placeholder_color = Color(0, 0, 0, 0)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 0)
-theme_override_colors/font_selected_color = Color(0, 0, 0, 0)
 theme_override_colors/font_color = Color(0, 0, 0, 0)
+theme_override_colors/font_selected_color = Color(0, 0, 0, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0)
+theme_override_colors/font_placeholder_color = Color(0, 0, 0, 0)
+theme_override_colors/caret_color = Color(0, 0, 0, 0)
+theme_override_colors/selection_color = Color(0, 0, 0, 0)
+theme_override_colors/clear_button_color = Color(0, 0, 0, 0)
+theme_override_colors/clear_button_color_pressed = Color(0, 0, 0, 0)
 theme_override_fonts/font = ExtResource("18_ekwff")
 selecting_enabled = false
 drag_and_drop_selection_enabled = false
@@ -276,7 +276,7 @@ scale = Vector2(6.32, 6.32)
 horizontal_alignment = 2
 script = ExtResource("10_6opjh")
 
-[node name="Mode" parent="." instance=ExtResource("25_nts5e")]
+[node name="Mode" parent="." instance=ExtResource("25_ye0jt")]
 
 [connection signal="button_down" from="Fondo/ScoreHandling/1+" to="Label" method="_on_button_button_down"]
 [connection signal="pressed" from="Fondo/ScoreHandling/1+" to="Fondo/ScoreHandling/1+" method="_on_pressed"]

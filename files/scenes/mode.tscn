@@ -1,11 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://nbdk8jqrta48"]
+[gd_scene load_steps=7 format=3 uid="uid://dm1tywip6pqx7"]
 
 [ext_resource type="Texture2D" uid="uid://v8du3rytuojy" path="res://score_mode_spr.png" id="1_topsc"]
-[ext_resource type="Script" path="res://mode_bt.gd" id="2_51gjq"]
+[ext_resource type="Script" uid="uid://c1db0xsmvmiao" path="res://mode_bt.gd" id="2_51gjq"]
 [ext_resource type="FontFile" uid="uid://bgbkh1m6c1l4m" path="res://times.ttf" id="2_wkr5e"]
 [ext_resource type="Texture2D" uid="uid://biigukiryaich" path="res://score_spr.png" id="3_buudp"]
-[ext_resource type="Script" path="res://mode_text.gd" id="4_j73qx"]
-[ext_resource type="Script" path="res://max_text.gd" id="6_tgsfp"]
+[ext_resource type="Script" uid="uid://kd7dvpo6ewu8" path="res://mode_text.gd" id="4_j73qx"]
+[ext_resource type="Script" uid="uid://i4t0t75wwmv5" path="res://max_text.gd" id="6_tgsfp"]
 
 [node name="Mode" type="Node"]
 
@@ -73,7 +73,8 @@ offset_right = -767.0
 offset_bottom = -213.0
 theme_override_fonts/font = ExtResource("2_wkr5e")
 theme_override_font_sizes/font_size = 30
-text = "v1.0.0"
+text = "v1.0.1"
+horizontal_alignment = 2
 
 [connection signal="pressed" from="ModeSpr/ModeBt" to="ModeSpr/ModeBt" method="_on_pressed"]
 [connection signal="pressed" from="ModeSpr/ModeBt" to="ModeSpr/ModeText" method="_on_pressed"]

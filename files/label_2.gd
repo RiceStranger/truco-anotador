@@ -3,5 +3,5 @@ extends Label
 func _ready() -> void:
 	text = "0"
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	text = str(Global.score2)

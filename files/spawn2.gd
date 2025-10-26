@@ -1,10 +1,10 @@
 extends Sprite2D
-# this is for Team 1
+# this is for Team 2
 
 var i = 0
 var i2 = 0.0
 var valu = 0
-# Called when the node enters the scene tree for the first time.
+
 func _ready() -> void:
 	i = Global.clonespawn
 	scale.x = 0.591
@@ -42,8 +42,6 @@ func _ready() -> void:
 			rotation = deg_to_rad(36)
 			break
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
 	if Global.score2 >= i:
 		visible = true

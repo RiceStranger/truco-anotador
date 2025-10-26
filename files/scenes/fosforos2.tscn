@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://c46ebs5suyudk"]
 
 [ext_resource type="Texture2D" uid="uid://bqfg76dstcrvg" path="res://fosforo2.png" id="1_yp0pm"]
-[ext_resource type="Script" path="res://spawn2.gd" id="2_r8uwa"]
+[ext_resource type="Script" uid="uid://bds6087xkkbnj" path="res://spawn2.gd" id="2_r8uwa"]
 
 [node name="FosforoSpawner2" type="Sprite2D"]
 texture = ExtResource("1_yp0pm")

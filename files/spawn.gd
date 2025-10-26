@@ -4,7 +4,7 @@ extends Sprite2D
 var i = 0
 var i2 = 0.0
 var valu = 0
-# Called when the node enters the scene tree for the first time.
+
 func _ready() -> void:
 	i = Global.clonespawn
 	scale.x = 0.591
@@ -43,7 +43,6 @@ func _ready() -> void:
 			break
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
 	if Global.score1 >= i:
 		visible = true
