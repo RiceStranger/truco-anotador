@@ -1,4 +1,7 @@
 extends Button
+var tmpArray
 
 func _on_pressed() -> void:
-	Global.Gallo3 = Global.GalloVALS.filter(Global.overZero).min()
+	tmpArray = Global.GalloVALS
+	tmpArray.remove_at(2)
+	Global.Gallo3 = tmpArray.filter(Global.overZero).min()
